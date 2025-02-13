@@ -6,7 +6,7 @@ const host = 'localhost';
 const port = 8080;
 
 module.exports = {
-    mode: 'development',
+    mode:'development',
     context: path.resolve(__dirname, 'src'),
     target: 'web',
     entry: {
@@ -17,7 +17,7 @@ module.exports = {
     output: {
         filename: '[name]-[contenthash:6].bundle.js',
         path: path.join(__dirname, './dist'),
-        publicPath: `http://${host}:${port}/`
+        publicPath:'/'
     },
     resolve: {
         mainFields: ['browser', 'module', 'main'],
