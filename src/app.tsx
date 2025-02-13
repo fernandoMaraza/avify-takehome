@@ -1,7 +1,13 @@
 import React from 'react';
-
-const App = () => <h1>UK Energy Mix</h1>;
-
-export {
-    App
-}
+import Header from './components/Header';
+import EnergyList from './components/EnergyList';
+import './assets/css/global.css';
+const App = () => {
+    return (
+        <div className="container">
+            <Header/>;
+            <EnergyList/>;
+        </div>
+    )
+} 
+export default App;
